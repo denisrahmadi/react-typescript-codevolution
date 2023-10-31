@@ -1,6 +1,6 @@
 type GreetProps = {
     name: string;
-    place: string;
+    messageCount: number;
 };
 
 export const Greet = (props: GreetProps) => {
@@ -8,7 +8,7 @@ export const Greet = (props: GreetProps) => {
         <>
             <div>
                 <h1>
-                    Hello {props.name}, Welcome to {props.place}
+                    Hello {props.name}, you have {props.messageCount} unread messages
                 </h1>
             </div>
         </>
